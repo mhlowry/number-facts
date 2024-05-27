@@ -3,24 +3,49 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   margin: 0;
-  font-family: monospace, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: slategray;
+  background-color: #2F4F4F; /* A darker shade of slategray for better contrast */
+  color: #FFFFFF; /* Light text for better readability */
 }
 
 h1 {
   font-size: 75px;
+  font-weight: 700; /* Make the heading bold */
+  text-align: center; /* Center align the heading */
+  margin-top: 20px; /* Add some margin at the top */
+  color: #FFFAF0; /* A light color to stand out against the background */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'source-code-pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
+  background-color: #282c34; /* A dark background for code snippets */
+  color: #61dafb; /* A color that complements the dark background */
+  padding: 2px 4px; /* Add some padding for better readability */
+  border-radius: 4px; /* Rounded corners */
 }
 
+/* Additional utility classes */
+.container {
+  @apply mx-auto px-4;
+}
+
+.form-container {
+  @apply bg-white rounded-lg shadow-lg p-6 max-w-lg mx-auto;
+}
+
+.input-field {
+  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2.5;
+}
+
+.submit-button {
+  @apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center;
+}
+
+.fact-box {
+  @apply bg-lime-500 text-white p-4 rounded-lg shadow-md w-full max-w-xl mx-auto;
+}
 
