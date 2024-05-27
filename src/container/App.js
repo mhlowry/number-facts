@@ -1,7 +1,6 @@
 import './App.css';
 import Fact from '../components/Fact';
-import UserInput from '../components/UserInput'
-import { Component } from 'react';
+import UserInput from '../components/UserInput';
 
 function App() {
   return (
